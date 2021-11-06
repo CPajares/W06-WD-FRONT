@@ -6,6 +6,9 @@ const robotReducer = (robots = [], action) => {
     case actionTypes.loadRobots:
       newRobots = [...action.robots];
       break;
+    case actionTypes.loadRobotById:
+      newRobots = robots.filter((robot) => robot._id === action.id);
+      break;
     default:
   }
   return newRobots;
