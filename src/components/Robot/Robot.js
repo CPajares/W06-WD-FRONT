@@ -1,5 +1,4 @@
 const Robot = ({ robot }) => {
-  console.log(robot);
   return (
     <>
       <h2>Nombre: {robot.name}</h2>
