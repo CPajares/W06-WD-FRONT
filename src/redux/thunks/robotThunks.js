@@ -13,9 +13,7 @@ export const loadRobotsThunks = () => {
 
 export const loadRobotByIdThunks = (id) => {
   return async (dispatch) => {
-    const response = await fetch(
-      `https://robot-challange.herokuapp.com/robots/${id}`
-    );
+    const response = await fetch(process.env.REACT_APP_URL_API_HEROKU$`${id}`);
     const robot = await response.json();
     dispatch(loadRobotByIdAction(robot));
   };
