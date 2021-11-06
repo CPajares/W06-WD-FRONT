@@ -1,7 +1,7 @@
-const Robot = () => {
+const Robot = ({ robot }) => {
   return (
     <>
-      <h2>Nombre: Emilio</h2>
+      <h2>Nombre: {robot.name}</h2>
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OTaIMPhqrWk-t6KRXIH5cX9ky6ms_Escl7yIbqrfQP6dyct8O_qK1cAgd_WHqtaCmQY&usqp=CAU"
         alt="robot"
