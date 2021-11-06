@@ -1,13 +1,11 @@
 import {
   loadRobotByIdAction,
   loadRobotsAction,
-} from "../../action/actionCreators";
+} from "../actions/actionCreators";
 
 export const loadRobotsThunks = () => {
   return async (dispatch) => {
-    const response = await fetch(
-      "https://robot-challange.herokuapp.com/robots/"
-    );
+    const response = await fetch(process.env.REACT_APP_URL_API_HEROKU);
     const robots = await response.json();
     dispatch(loadRobotsAction(robots));
   };
