@@ -1,4 +1,4 @@
-import actionTypes from "../../action/actionTypes";
+import actionTypes from "../actions/actionTypes";
 
 const robotReducer = (robots = [], action) => {
   let newRobots = robots;
