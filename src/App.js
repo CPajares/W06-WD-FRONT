@@ -10,9 +10,12 @@ function App() {
     loadRobots();
   }, [loadRobots]);
   return (
-    <div className="App">
-      <RobotList robots={robots} />
-    </div>
+    <>
+      <h1 className="title bg-warning">Roboces</h1>
+      <div className="App">
+        <RobotList robots={robots} />
+      </div>
+    </>
   );
 }
 

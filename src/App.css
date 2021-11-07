@@ -1,3 +1,11 @@
 body {
   background-color: antiquewhite;
 }
+
+.title {
+  text-align: center;
+}
+
+.container-robot {
+  display: flex;
+}

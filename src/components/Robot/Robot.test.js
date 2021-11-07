@@ -6,7 +6,7 @@ describe("Give a Robot component", () => {
     test("Then should render a Card with the name", () => {
       const robotObject = {
         _id: "618678658516adffbffcac4b",
-        name: "Bender",
+        name: "Emilio",
         url: "https:",
         features: {
           speed: 2,
