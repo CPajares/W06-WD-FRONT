@@ -1,4 +1,12 @@
+import useRobot from "../../hooks/useRobot";
+
 const Robot = ({ robot, day, month, year }) => {
+  const { deleteRobotById } = useRobot();
+
+  const onClickDelete = () => {
+    deleteRobotById(robot._id);
+  };
+
   return (
     <>
       <h2>Nombre: {robot.name}</h2>
@@ -18,7 +26,9 @@ const Robot = ({ robot, day, month, year }) => {
       <button type="button" className="btn btn-warning">
         MODIFICAR
       </button>
-      <button className="btn btn-danger">BORRAR</button>
+      <button className="btn btn-danger" onClick={onClickDelete}>
+        BORRAR
+      </button>
     </>
   );
 };
