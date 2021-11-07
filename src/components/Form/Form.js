@@ -110,9 +110,8 @@ const Form = () => {
         />
       </div>
       <button type="submit" className="btn btn-info">
-        CREAR
+        CREATE
       </button>
-      <pre>{JSON.stringify(newDataRobot, null, 2)}</pre>
     </form>
   );
 };
