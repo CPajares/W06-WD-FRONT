@@ -1,4 +1,4 @@
-const Robot = ({ robot }) => {
+const Robot = ({ robot, day, month, year }) => {
   return (
     <>
       <h2>Nombre: {robot.name}</h2>
@@ -12,7 +12,7 @@ const Robot = ({ robot }) => {
           Resistencia: {robot.features.resistence}
         </li>
         <li className="list-group-item list-group-item-success">
-          Fecha: {robot.features.date}
+          Fecha: {day}/{month}/{year}
         </li>
       </ul>
       <button type="button" className="btn btn-warning">
