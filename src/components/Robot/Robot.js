@@ -2,7 +2,7 @@ const Robot = ({ robot, day, month, year }) => {
   return (
     <>
       <h2>Nombre: {robot.name}</h2>
-      <img src={robot.url} alt={`foto robot ${robot.name}`}></img>
+      <img src={robot.url} alt={`${robot.name}`}></img>
       <h3>Caracteristicas</h3>
       <ul className="list-group">
         <li className="list-group-item list-group-item-success">
