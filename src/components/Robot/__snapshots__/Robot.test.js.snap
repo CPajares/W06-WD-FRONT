@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Give a Robot component When it receive an object robot Then should render a Card with the name 1`] = `
+Array [
+  <h2>
+    Nombre: 
+    Bender
+  </h2>,
+  <img
+    alt="foto robot Bender"
+    src="https:"
+  />,
+  <h3>
+    Caracteristicas
+  </h3>,
+  <ul
+    className="list-group"
+  >
+    <li
+      className="list-group-item list-group-item-success"
+    >
+      Velocidad:
+      2
+    </li>
+    <li
+      className="list-group-item list-group-item-success"
+    >
+      Resistencia: 
+      3
+    </li>
+    <li
+      className="list-group-item list-group-item-success"
+    >
+      Fecha: 
+      2021-02-04T23:00:00.000Z
+    </li>
+  </ul>,
+  <button
+    className="btn btn-warning"
+    type="button"
+  >
+    MODIFICAR
+  </button>,
+  <button
+    className="btn btn-danger"
+  >
+    BORRAR
+  </button>,
+]
+`;
