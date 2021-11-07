@@ -1,13 +1,6 @@
 import Robot from "../Robot/Robot";
-import { useEffect } from "react";
-import useRobot from "../../hooks/useRobot";
 
-const RobotList = () => {
-  const { robots, loadRobots } = useRobot();
-  useEffect(() => {
-    loadRobots();
-  }, [loadRobots]);
-
+const RobotList = ({ robots }) => {
   return robots.map((robot) => (
     <Robot
       key={robot._id}
