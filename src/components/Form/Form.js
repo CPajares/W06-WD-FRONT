@@ -43,6 +43,7 @@ const Form = () => {
       <div className="form-group">
         <label htmlFor="exampleFormControlInput1">Name: </label>
         <input
+          value={newDataRobot.name}
           onChange={changeData}
           autoComplete="off"
           type="name"
@@ -54,6 +55,7 @@ const Form = () => {
       <div className="form-group">
         <label htmlFor="url">Url: </label>
         <input
+          value={newDataRobot.url}
           onChange={changeData}
           type="url"
           className="form-control"
@@ -64,6 +66,7 @@ const Form = () => {
       <div className="form-group">
         <label htmlFor="speed">Speed</label>
         <select
+          value={newDataRobot.features.speed}
           onChange={changeDataFeature}
           className="form-control"
           id="speed"
@@ -83,6 +86,7 @@ const Form = () => {
       <div className="form-group">
         <label htmlFor="resistence">Resistence</label>
         <select
+          value={newDataRobot.features.resistence}
           onChange={changeDataFeature}
           className="form-control"
           id="resistence"
@@ -102,6 +106,7 @@ const Form = () => {
       <div className="form-group">
         <label htmlFor="date">Date: </label>
         <input
+          value={newDataRobot.features.date}
           onChange={changeDataFeature}
           type="date"
           className="form-control"
