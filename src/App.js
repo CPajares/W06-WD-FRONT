@@ -1,18 +1,24 @@
 import { useEffect } from "react";
+
 import "./App.css";
 import Form from "./components/Form/Form";
+import LoginForm from "./components/LoginForm";
 
 import RobotList from "./components/RobotList/RobotList";
 import useRobot from "./hooks/useRobot";
 
 function App() {
-  const { loadRobots, robots } = useRobot();
+  const { loadRobots, robots, user } = useRobot();
+  const authorized = user.isAuth;
+  console.log(authorized);
+
   useEffect(() => {
     loadRobots();
   }, [loadRobots]);
-  return (
+  return !authorized ? (
+    <LoginForm />
+  ) : (
     <>
-      <h1 className="title bg-warning">Roboces</h1>
       <div className="App">
         <RobotList robots={robots} />
       </div>
