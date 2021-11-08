@@ -5,6 +5,7 @@ import {
   deleteRobotByIdThunks,
   loadRobotsThunks,
 } from "../redux/thunks/robotThunks";
+import { loginUserThunks } from "../redux/thunks/userThunks";
 
 const useRobot = () => {
   const dispatch = useDispatch();
@@ -25,12 +26,17 @@ const useRobot = () => {
     dispatch(createRobotThunk(robot));
   };
 
+  const loginUser = (user) => {
+    dispatch(loginUserThunks(user));
+  };
+
   return {
     dispatch,
     robots,
     loadRobots,
     deleteRobotById,
     createRobot,
+    loginUser,
   };
 };
 

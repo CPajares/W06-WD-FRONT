@@ -3,6 +3,8 @@ const actionTypes = {
   loadRobotById: "LOAD_BY_ID_ROBOT",
   deleteRobotById: "DELETE_ROBOT_BY_ID",
   createRobot: "CREATE_ROBOT",
+  loginUser: "LOGIN_USER",
+  logoutUser: "LOGOUT_USER",
 };
 
 export default actionTypes;
