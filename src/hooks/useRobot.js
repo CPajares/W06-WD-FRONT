@@ -9,7 +9,10 @@ import { loginUserThunks } from "../redux/thunks/userThunks";
 
 const useRobot = () => {
   const dispatch = useDispatch();
-  const robots = useSelector(({ robots }) => robots);
+  const { robots, user } = useSelector(({ robots, user }) => ({
+    robots,
+    user,
+  }));
 
   const loadRobots = useCallback(() => {
     dispatch(loadRobotsThunks());
@@ -33,6 +36,7 @@ const useRobot = () => {
   return {
     dispatch,
     robots,
+    user,
     loadRobots,
     deleteRobotById,
     createRobot,
