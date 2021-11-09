@@ -1,8 +1,13 @@
 import { useState } from "react";
+import useRobot from "../hooks/useRobot";
 
 const LoginForm = () => {
+  const { loginUser } = useRobot();
+
   const ClickLogin = (event) => {
     event.preventDefault();
+    loginUser(loginData);
+    setLoginData(InitialLogin);
     console.log("yes");
   };
 

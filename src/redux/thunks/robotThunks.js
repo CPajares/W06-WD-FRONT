@@ -11,7 +11,7 @@ const apiUrl = process.env.REACT_APP_URL_API_HEROKU;
 
 export const loadRobotsThunks = () => {
   return async (dispatch) => {
-    const response = await fetch(`${apiUrl}`);
+    const response = await fetch(`${apiUrl}robots`);
     const robots = await response.json();
     dispatch(loadRobotsAction(robots));
   };

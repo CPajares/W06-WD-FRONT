@@ -10,7 +10,6 @@ import useRobot from "./hooks/useRobot";
 function App() {
   const { loadRobots, robots, user } = useRobot();
   const authorized = user.isAuth;
-  console.log(authorized);
 
   useEffect(() => {
     loadRobots();
