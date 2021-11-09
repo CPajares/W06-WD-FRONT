@@ -48,5 +48,6 @@
   "devDependencies": {
     "jest": "^27.3.1",
     "msw": "^0.35.0"
-  }
+  },
+  "proxy": "http://localhost:6000/"
 }
